@@ -112,11 +112,15 @@ rack to the control plane. Principal Cloud Engineer at **Kachi** (kachi.ai): the
 
 ## &nbsp;📊&nbsp; GitHub Analytics
 
-<!-- stats + languages — self-hosted github-readme-stats (Go), committed by the `stats cards`
-     workflow to the `output` branch. Free public instance is rate-limited/down as of 2026. -->
+<!-- summary cards — vn7n24fzkq/github-profile-summary-cards, committed by the `summary cards`
+     workflow to output/profile-summary-card-output/github_dark/ . -->
 <p align="center">
-  <img height="170" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/stats.svg" alt="stats" />
-  <img height="170" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/top-langs.svg" alt="top languages" />
+  <img width="49%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/profile-summary-card-output/github_dark/0-profile-details.svg" alt="profile summary" />
+  <img width="49%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="languages by commits" />
+</p>
+<p align="center">
+  <img width="49%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/profile-summary-card-output/github_dark/4-productive-time.svg" alt="productive time" />
+  <img width="49%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="repos per language" />
 </p>
 
 <!-- contribution game — Space Shooter GIF, committed by the `contribution game` workflow -->

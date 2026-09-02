@@ -1,9 +1,9 @@
-name: stats cards
+name: summary cards
 
-# Self-hosted github-readme-stats (Go build, runs in Actions — the free public
-# instance is rate-limited/down as of 2026). Commits stats.svg + top-langs.svg to
-# the `output` branch. Add PROFILE_TOKEN (classic PAT: repo, read:org, read:user)
-# for private + org contribution counts.
+# vn7n24fzkq/github-profile-summary-cards (3.6k+ stars) — generates a set of
+# profile summary SVGs and commits them to  profile-summary-card-output/<theme>/
+# on the `output` branch. PROFILE_TOKEN (classic PAT: repo, read:org, read:user)
+# is required for private + org data.
 
 on:
   schedule:
@@ -24,30 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: stats card
-        uses: soulteary/github-readme-stats-action@v1.0.0
-        with:
-          card: stats
-          token: ${{ secrets.PROFILE_TOKEN || github.token }}
-          path: dist/stats.svg
-          options: >-
-            username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=C9A15A&icon_color=E7D6B8&text_color=C9D1D9
-
-      - name: top languages card
-        uses: soulteary/github-readme-stats-action@v1.0.0
-        with:
-          card: top-langs
-          token: ${{ secrets.PROFILE_TOKEN || github.token }}
-          path: dist/top-langs.svg
-          options: >-
-            username=${{ github.repository_owner }}&layout=compact&langs_count=8&hide_border=true&bg_color=0D1117&title_color=C9A15A&text_color=C9D1D9
-
-      - name: publish to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-          keep_files: true
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: output
+          UTC_OFFSET: 5
+          AUTO_PUSH: true
