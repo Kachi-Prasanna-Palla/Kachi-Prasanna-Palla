@@ -1,7 +1,6 @@
-name: profile assets
+name: snake
 
-# Builds the contribution snake + the 3D contribution calendar and publishes
-# both to the `output` branch, which the README links to.
+# Regenerates the contribution snake and publishes it to the `output` branch.
 
 on:
   schedule:
@@ -14,41 +13,25 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-assets
+  group: snake
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
     steps:
-      - name: contribution snake
-        uses: Platane/snk@v3
+      - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: 3D contribution calendar
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          # PROFILE_TOKEN (a classic PAT with repo + read:org) makes private org
-          # contributions count. Without it, only public activity is shown.
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
-          USERNAME: ${{ github.repository_owner }}
-
-      - name: collect
-        run: |
-          sudo chown -R "$USER":"$USER" dist profile-3d-contrib 2>/dev/null || true
-          mkdir -p dist/profile-3d-contrib
-          cp -f profile-3d-contrib/*.svg dist/profile-3d-contrib/
-          ls -R dist
-
-      - name: publish to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+      - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          keep_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

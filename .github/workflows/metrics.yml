@@ -1,10 +1,10 @@
 name: metrics
 
-# For FULL data (private + org contributions, languages across private repos),
-# add a repo secret PROFILE_TOKEN — a classic PAT with scopes: repo, read:org, read:user.
-#   github.com/settings/tokens -> Generate new token (classic)
-#   repo Settings -> Secrets and variables -> Actions -> New repository secret -> PROFILE_TOKEN
-# Without it this still runs, but only sees PUBLIC activity.
+# Add a repo secret PROFILE_TOKEN — a classic PAT with scopes: repo, read:org, read:user —
+# so private + org contributions and languages across private repos are counted.
+# Without it, this still runs but only sees PUBLIC activity.
+#   github.com/settings/tokens -> classic -> repo, read:org, read:user
+#   repo Settings -> Secrets and variables -> Actions -> PROFILE_TOKEN
 
 on:
   workflow_dispatch:
@@ -25,14 +25,14 @@ jobs:
           filename: github-metrics.svg
           committer_branch: output
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: ""
           config_timezone: Asia/Kolkata
+          config_display: large
+
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+
           plugin_languages: yes
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
           plugin_languages_sections: most-used
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
+          plugin_languages_details: percentage

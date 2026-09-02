@@ -112,30 +112,24 @@ rack to the control plane. Principal Cloud Engineer at **Kachi** (kachi.ai): the
 
 ## &nbsp;📊&nbsp; GitHub Analytics
 
-<!-- Everything here is either self-hosted (the profile-assets workflow commits the SVGs to
-     the `output` branch) or on a service that is currently up. The classic
-     github-readme-stats / activity-graph / trophy cards are OMITTED on purpose — their free
-     public hosts are paused/disabled as of 2026. To add the stats + languages card back,
-     self-host github-readme-stats on your own Vercel and point the URL at your instance. -->
+<!-- Self-hosted assets only. The classic github-readme-stats / activity-graph / trophy cards
+     are omitted — their free public hosts are paused/disabled as of 2026. The `metrics` and
+     `snake` workflows commit their SVGs to the `output` branch. Add PROFILE_TOKEN (see the
+     workflow file) so private + org contributions are counted. -->
 
-<!-- streak — live -->
+<!-- metrics: isometric full-year calendar + language split — needs the metrics workflow -->
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Kachi-Prasanna-Palla&hide_border=true&background=0D1117&ring=C9A15A&fire=E7D6B8&currStreakLabel=C9A15A&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
+  <img width="100%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-metrics.svg" alt="contribution calendar and languages" />
 </p>
 
-<!-- 3D contribution calendar — profile-assets workflow -->
-<p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution calendar" />
-</p>
-
-<!-- contribution snake — profile-assets workflow -->
+<!-- contribution snake — needs the snake workflow -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
 </p>
 
-<!-- metrics — needs the PROFILE_TOKEN secret, then run the metrics workflow once -->
+<!-- streak — live service -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-metrics.svg" alt="metrics" />
+  <img src="https://streak-stats.demolab.com?user=Kachi-Prasanna-Palla&hide_border=true&background=0D1117&ring=C9A15A&fire=E7D6B8&currStreakLabel=C9A15A&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
 </p>
 
 <p align="center"><sub>views&nbsp;
