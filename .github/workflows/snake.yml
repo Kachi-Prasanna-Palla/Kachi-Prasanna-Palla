@@ -33,7 +33,9 @@ jobs:
       - name: 3D contribution calendar
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PROFILE_TOKEN (a classic PAT with repo + read:org) makes private org
+          # contributions count. Without it, only public activity is shown.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
           USERNAME: ${{ github.repository_owner }}
 
       - name: collect

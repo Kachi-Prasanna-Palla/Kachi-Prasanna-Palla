@@ -1,14 +1,15 @@
 name: metrics
 
-# Needs a repo secret METRICS_TOKEN — a classic PAT with scopes: repo, read:org, read:user.
-# Create at github.com/settings/tokens -> then Settings -> Secrets and variables -> Actions.
-# Dispatch-only until the token exists (so failures don't email you); uncomment the
-# schedule block once it's set. The action commits github-metrics.svg to the output branch itself.
+# For FULL data (private + org contributions, languages across private repos),
+# add a repo secret PROFILE_TOKEN — a classic PAT with scopes: repo, read:org, read:user.
+#   github.com/settings/tokens -> Generate new token (classic)
+#   repo Settings -> Secrets and variables -> Actions -> New repository secret -> PROFILE_TOKEN
+# Without it this still runs, but only sees PUBLIC activity.
 
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "0 2 * * *"
+  schedule:
+    - cron: "0 2 * * *"
 
 permissions:
   contents: write
@@ -19,15 +20,19 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.PROFILE_TOKEN || github.token }}
           user: ${{ github.repository_owner }}
           filename: github-metrics.svg
           committer_branch: output
           template: classic
           base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
+          plugin_languages_sections: most-used
           plugin_habits: yes
-          config_timezone: Asia/Kolkata
+          plugin_habits_from: 200
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes

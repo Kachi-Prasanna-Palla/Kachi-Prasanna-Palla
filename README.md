@@ -133,7 +133,7 @@ rack to the control plane. Principal Cloud Engineer at **Kachi** (kachi.ai): the
   <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
 </p>
 
-<!-- metrics — needs the METRICS_TOKEN secret, then run the metrics workflow once -->
+<!-- metrics — needs the PROFILE_TOKEN secret, then run the metrics workflow once -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-metrics.svg" alt="metrics" />
 </p>
