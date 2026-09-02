@@ -32,7 +32,7 @@ jobs:
           token: ${{ secrets.PROFILE_TOKEN || github.token }}
           path: dist/stats.svg
           options: >-
-            username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=C9A15A&icon_color=E7D6B8&text_color=C9D1D9
+            username=${{ github.repository_owner }}&show_icons=true&hide_rank=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=C9A15A&icon_color=E7D6B8&text_color=C9D1D9
 
       - name: top languages card
         uses: soulteary/github-readme-stats-action@v1.0.0
