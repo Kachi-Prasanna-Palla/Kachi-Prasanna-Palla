@@ -112,23 +112,22 @@ rack to the control plane. Principal Cloud Engineer at **Kachi** (kachi.ai): the
 
 ## &nbsp;📊&nbsp; GitHub Analytics
 
-<!-- contribution snake — the `snake` workflow commits it to the `output` branch -->
+<!-- stats + languages — self-hosted github-readme-stats (Go), committed by the `stats cards`
+     workflow to the `output` branch. Free public instance is rate-limited/down as of 2026. -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
+  <img height="170" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/stats.svg" alt="stats" />
+  <img height="170" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/top-langs.svg" alt="top languages" />
+</p>
+
+<!-- contribution game — Space Shooter GIF, committed by the `contribution game` workflow -->
+<p align="center">
+  <img src="./assets/game.gif" alt="contribution graph as a space shooter" />
 </p>
 
 <!-- streak — live service -->
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Kachi-Prasanna-Palla&hide_border=true&background=0D1117&ring=C9A15A&fire=E7D6B8&currStreakLabel=C9A15A&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
 </p>
-
-<!-- STATS + LANGUAGES CARD — add once you self-host github-readme-stats on your own Vercel
-     (the free public instance is down as of 2026). Then uncomment and set STATS_HOST:
-<p align="center">
-  <img height="165" src="https://STATS_HOST/api?username=Kachi-Prasanna-Palla&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=C9A15A&icon_color=E7D6B8&text_color=C9D1D9" alt="stats" />
-  <img height="165" src="https://STATS_HOST/api/top-langs/?username=Kachi-Prasanna-Palla&layout=compact&hide_border=true&langs_count=8&bg_color=0D1117&title_color=C9A15A&text_color=C9D1D9" alt="languages" />
-</p>
--->
 
 <p align="center"><sub>views&nbsp;
   <img src="https://komarev.com/ghpvc/?username=Kachi-Prasanna-Palla&style=flat-square&color=C9A15A&label=" alt="" />
