@@ -117,9 +117,9 @@ rack to the control plane. Principal Cloud Engineer at **Kachi** (kachi.ai): the
      `snake` workflows commit their SVGs to the `output` branch. Add PROFILE_TOKEN (see the
      workflow file) so private + org contributions are counted. -->
 
-<!-- metrics: isometric full-year calendar + language split — needs the metrics workflow -->
+<!-- 3D contribution calendar — profile-assets workflow -->
 <p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-metrics.svg" alt="contribution calendar and languages" />
+  <img width="100%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/profile-3d-contrib/profile-night-green.svg" alt="3D contribution calendar" />
 </p>
 
 <!-- contribution snake — needs the snake workflow -->
