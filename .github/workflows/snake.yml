@@ -38,8 +38,10 @@ jobs:
 
       - name: collect
         run: |
+          sudo chown -R "$USER":"$USER" dist profile-3d-contrib 2>/dev/null || true
           mkdir -p dist/profile-3d-contrib
           cp -f profile-3d-contrib/*.svg dist/profile-3d-contrib/
+          ls -R dist
 
       - name: publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
