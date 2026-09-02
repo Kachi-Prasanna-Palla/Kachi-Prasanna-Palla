@@ -1,9 +1,9 @@
 name: summary cards
 
-# vn7n24fzkq/github-profile-summary-cards (3.6k+ stars) — generates a set of
-# profile summary SVGs and commits them to  profile-summary-card-output/<theme>/
-# on the `output` branch. PROFILE_TOKEN (classic PAT: repo, read:org, read:user)
-# is required for private + org data.
+# vn7n24fzkq/github-profile-summary-cards (3.6k+ stars) generates a set of profile
+# SVGs; we publish them to  output/profile-summary-card-output/<theme>/ .
+# PROFILE_TOKEN (classic PAT: repo, read:org, read:user) -> private + org data.
+# Falls back to the workflow token (public only) if the secret is unset.
 
 on:
   schedule:
@@ -24,11 +24,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
-          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || github.token }}
         with:
           USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: output
           UTC_OFFSET: 5
-          AUTO_PUSH: true
+          AUTO_PUSH: false
+
+      - name: publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: profile-summary-card-output
+          keep_files: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
