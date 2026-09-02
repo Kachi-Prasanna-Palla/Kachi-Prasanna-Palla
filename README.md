@@ -112,17 +112,7 @@ rack to the control plane. Principal Cloud Engineer at **Kachi** (kachi.ai): the
 
 ## &nbsp;📊&nbsp; GitHub Analytics
 
-<!-- Self-hosted assets only. The classic github-readme-stats / activity-graph / trophy cards
-     are omitted — their free public hosts are paused/disabled as of 2026. The `metrics` and
-     `snake` workflows commit their SVGs to the `output` branch. Add PROFILE_TOKEN (see the
-     workflow file) so private + org contributions are counted. -->
-
-<!-- 3D contribution calendar — profile-assets workflow -->
-<p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/profile-3d-contrib/profile-night-green.svg" alt="3D contribution calendar" />
-</p>
-
-<!-- contribution snake — needs the snake workflow -->
+<!-- contribution snake — the `snake` workflow commits it to the `output` branch -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
 </p>
@@ -131,6 +121,14 @@ rack to the control plane. Principal Cloud Engineer at **Kachi** (kachi.ai): the
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Kachi-Prasanna-Palla&hide_border=true&background=0D1117&ring=C9A15A&fire=E7D6B8&currStreakLabel=C9A15A&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
 </p>
+
+<!-- STATS + LANGUAGES CARD — add once you self-host github-readme-stats on your own Vercel
+     (the free public instance is down as of 2026). Then uncomment and set STATS_HOST:
+<p align="center">
+  <img height="165" src="https://STATS_HOST/api?username=Kachi-Prasanna-Palla&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=C9A15A&icon_color=E7D6B8&text_color=C9D1D9" alt="stats" />
+  <img height="165" src="https://STATS_HOST/api/top-langs/?username=Kachi-Prasanna-Palla&layout=compact&hide_border=true&langs_count=8&bg_color=0D1117&title_color=C9A15A&text_color=C9D1D9" alt="languages" />
+</p>
+-->
 
 <p align="center"><sub>views&nbsp;
   <img src="https://komarev.com/ghpvc/?username=Kachi-Prasanna-Palla&style=flat-square&color=C9A15A&label=" alt="" />
