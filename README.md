@@ -112,26 +112,30 @@ rack to the control plane. Principal Cloud Engineer at **Kachi** (kachi.ai): the
 
 ## &nbsp;📊&nbsp; GitHub Analytics
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Kachi-Prasanna-Palla&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=C9A15A&icon_color=E7D6B8&text_color=C9D1D9" alt="stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kachi-Prasanna-Palla&layout=compact&hide_border=true&langs_count=8&bg_color=0D1117&title_color=C9A15A&text_color=C9D1D9" alt="top languages" />
-</p>
+<!-- Everything here is either self-hosted (the profile-assets workflow commits the SVGs to
+     the `output` branch) or on a service that is currently up. The classic
+     github-readme-stats / activity-graph / trophy cards are OMITTED on purpose — their free
+     public hosts are paused/disabled as of 2026. To add the stats + languages card back,
+     self-host github-readme-stats on your own Vercel and point the URL at your instance. -->
 
+<!-- streak — live -->
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Kachi-Prasanna-Palla&hide_border=true&background=0D1117&ring=C9A15A&fire=E7D6B8&currStreakLabel=C9A15A&sideLabels=C9D1D9&dates=8B949E" alt="streak" />
 </p>
 
+<!-- 3D contribution calendar — profile-assets workflow -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kachi-Prasanna-Palla&hide_border=true&bg_color=0D1117&color=E7D6B8&line=C9A15A&point=FFFFFF&area=true" alt="activity" />
+  <img width="100%" src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution calendar" />
 </p>
 
+<!-- contribution snake — profile-assets workflow -->
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Kachi-Prasanna-Palla&theme=onedark&no-bg=true&no-frame=true&column=7&margin-w=6&margin-h=6" alt="trophies" />
+  <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
 </p>
 
-<!-- Contribution snake — needs .github/workflows/snake.yml -->
+<!-- metrics — needs the METRICS_TOKEN secret, then run the metrics workflow once -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-contribution-grid-snake-dark.svg" alt="snake" />
+  <img src="https://raw.githubusercontent.com/Kachi-Prasanna-Palla/Kachi-Prasanna-Palla/output/github-metrics.svg" alt="metrics" />
 </p>
 
 <p align="center"><sub>views&nbsp;
